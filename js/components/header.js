@@ -7,7 +7,7 @@ export function header() {
         { text: 'Header', pathname: '54-grupe-dom', href: '/header' },
         { text: 'Click', pathname: '54-grupe-dom', href: '/click' },
     ];
-
+   
     const lp = location.pathname;
     const currentPage = lp.length > 1 && lp.at(-1)=== '/'
     ? lp.slice(0, -1) : lp;
@@ -18,8 +18,9 @@ export function header() {
         if(link.href === currentPage) {
         activePage = 'active';
     }
-
-        linksHTML += `<a class="link ${activePage}" href="${link.pathname}${link.href}">${link.text}</a>`;
+    
+    const fullPath = `${link.pathname}${link.href}`;
+        linksHTML += `<a class="link ${activePage}" href="${fullPath}">${link.text}</a>`;
     }
 
     const HTML = `
