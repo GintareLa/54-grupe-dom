@@ -1,11 +1,11 @@
 export function header() {
     const menu = [
-        { text: 'Home', href: '/' },
-        { text: 'Text', href: '/text' },
-        { text: 'Food', href: '/food' },
-        { text: 'Darzas', href: '/darzas' },
-        { text: 'Header', href: '/header' },
-        { text: 'Click', href: '/click' },
+        { text: 'Home', pathname: '54-grupe-dom', href: '/' },
+        { text: 'Text', pathname: '54-grupe-dom', href: '/text' },
+        { text: 'Food', pathname: '54-grupe-dom', href: '/food' },
+        { text: 'Darzas', pathname: '54-grupe-dom', href: '/darzas' },
+        { text: 'Header', pathname: '54-grupe-dom', href: '/header' },
+        { text: 'Click', pathname: '54-grupe-dom', href: '/click' },
     ];
 
     const lp = location.pathname;
