@@ -1,11 +1,11 @@
 export function header() {
     const menu = [
-        { text: 'Home', pathname: '54-grupe-dom', href: '/' },
-        { text: 'Text', pathname: '54-grupe-dom', href: '/text' },
-        { text: 'Food', pathname: '54-grupe-dom', href: '/food' },
-        { text: 'Darzas', pathname: '54-grupe-dom', href: '/darzas' },
-        { text: 'Header', pathname: '54-grupe-dom', href: '/header' },
-        { text: 'Click', pathname: '54-grupe-dom', href: '/click' },
+        { text: 'Home', href: '/54-grupe-dom/' },
+        { text: 'Text', href: '/54-grupe-dom/text' },
+        { text: 'Food', href: '/54-grupe-dom/food' },
+        { text: 'Darzas', href: '/54-grupe-dom/darzas' },
+        { text: 'Header', href: '/54-grupe-dom/header' },
+        { text: 'Click', href: '/54-grupe-dom/click' },
     ];
    
     const lp = location.pathname;
@@ -19,8 +19,8 @@ export function header() {
         activePage = 'active';
     }
     
-    const fullPath = `${link.pathname}${link.href}`;
-        linksHTML += `<a class="link ${activePage}" href="${fullPath}">${link.text}</a>`;
+    // const fullPath = `${link.pathname}${link.href}`;
+        linksHTML += `<a class="link ${activePage}" href="${link.href}">${link.text}</a>`;
     }
 
     const HTML = `
