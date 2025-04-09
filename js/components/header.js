@@ -5,8 +5,9 @@ export function header() {
         { text: 'Food', href: '/food' },
         { text: 'Darzas', href: '/darzas' },
         { text: 'Header', href: '/header' },
+        { text: 'Click', href: '/click' },
     ];
-    
+
     const lp = location.pathname;
     const currentPage = lp.length > 1 && lp.at(-1)=== '/'
     ? lp.slice(0, -1) : lp;
