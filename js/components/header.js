@@ -19,7 +19,7 @@ export function header() {
         activePage = 'active';
     }
 
-        linksHTML += `<a class="link ${activePage}" href="${link.href}">${link.text}</a>`;
+        linksHTML += `<a class="link ${activePage}" href="${link.pathname}${link.href}">${link.text}</a>`;
     }
 
     const HTML = `
