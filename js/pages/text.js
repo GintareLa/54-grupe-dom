@@ -1,6 +1,8 @@
 
-
+import { header } from "../components/header.js";
 const titleDOM = document.getElementById('title');
+
+header();
 console.log(titleDOM);
 
 console.log(titleDOM.textContent);
