@@ -19,8 +19,10 @@ export function header() {
         activePage = 'active';
     }
     
-    // const fullPath = `${link.pathname}${link.href}`;
-        linksHTML += `<a class="link ${activePage}" href="${link.href}">${link.text}</a>`;
+    const fullPath = `${window.location.origin}${link.href}`;
+    linksHTML += `<a class="link ${activePage}" href="${fullPath}">${link.text}</a>`;
+    
+        // linksHTML += `<a class="link ${activePage}" href="${link.href}">${link.text}</a>`;
     }
 
     const HTML = `
