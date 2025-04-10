@@ -1,4 +1,9 @@
+
 export function header() {
+    if(location.hostname !== 'localhost') {
+    const base = 'https://github.com/GintareLa/54-grupe-dom';
+    document.head.insertAdjacentHTML('afterbegin', '<base href="https://github.com/GintareLa/54-grupe-dom">');
+    }
     const menu = [
         { text: 'Home', href: '/' },
         { text: 'Text', href: '/text' },
