@@ -4,7 +4,7 @@ export function header() {
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/54-grupe-dom';
-        base = 'https://github.com/GintareLa/54-grupe-dom/';
+        base = 'https://gintarela.github.io/54-grupe-dom/';
     }
     document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
 
@@ -15,6 +15,7 @@ export function header() {
         { text: 'Darzas', href: '/darzas/' },
         { text: 'Header', href: '/header/' },
         { text: 'Click', href: '/click/' },
+        { text: 'Like', href: '/like/' },
     ];
 
     let linksHTML = '';
